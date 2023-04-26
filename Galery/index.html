@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }
+
+        .container {
+            width: 650px;
+            height: 500px;
+            display: flex;
+            transition: width 3s;
+        }
+
+        .container:hover {
+            width: 1200px;
+        }
+
+        .flex1 {
+            display: flex;
+            flex: 1;
+            transition: flex 1.5s;
+            position: relative;
+
+        }
+
+        .flex1:hover {
+            flex: 6;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .borderLeftRadius {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .borderRightRadius {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        div {
+            border: none !important;
+            border-radius: 20px !important;
+        }
+
+        .positionAbs {
+            position: absolute;
+            display: flex;
+            align-self: flex-end;
+            justify-self: start;
+            padding: 0.6rem;
+            color: white;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex1 ">
+            <img class="borderLeftRadius" src="images/1143636.jpg" alt="">
+            <div class="positionAbs">
+                <h6>Milkway</h6>
+            </div>
+        </div>
+        <div class="flex1"><img src="images/2495591.jpg" alt="">
+            <div class="positionAbs">
+                <h6>Universe</h6>
+            </div>
+        </div>
+        <div class="flex1"><img src="images/2495601.jpg" alt="">
+            <div class="positionAbs">
+                <h6>Flower</h6>
+            </div>
+        </div>
+        <div class="flex1"><img src="images/2495607.jpg" alt="">
+            <div class="positionAbs">
+                <h6>Symbol</h6>
+            </div>
+        </div>
+        <div class="flex1"><img src="images/2495630.jpg" alt="">
+            <div class="positionAbs">
+                <h6>Star</h6>
+            </div>
+        </div>
+        <div class="flex1"><img class="borderRightRadius" src="images/2495676.jpg" alt="">
+            <div class="positionAbs">
+                <h6>DNA</h6>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
